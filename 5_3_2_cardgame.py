@@ -86,8 +86,9 @@ def pick_roles():
         role_map[quota] =player
     trump_chooser =role_map[5]
     dealer =role_map[2]
+    other_player =role_map[3]
     quotas ={v: k for k,v in role_map.items()}
-    return trump_chooser,dealer,quotas
+    return trump_chooser,dealer,other_player,quotas
 
 
 def play_game():
